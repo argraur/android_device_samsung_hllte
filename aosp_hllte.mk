@@ -21,6 +21,16 @@ $(call inherit-product, device/samsung/hllte/device.mk)
 # HLLTE vendor
 $(call inherit-product-if-exists, vendor/samsung/hllte/hllte-vendor.mk)
 
+# Inherit common device configuration
+$(call inherit-product, device/samsung/smdk5260-common/device-common.mk)
+
+# Override build properties.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=hlltexx \
+    TARGET_DEVICE=hllte \
+    BUILD_FINGERPRINT="samsung/hlltexx/hllte:5.1.1/LMY47X/N7505POUDOK2:user/release-keys" \
+    PRIVATE_BUILD_DESC="hlltexx-user 5.1.1 LMY47X N7505POUDOK2 release-keys"
+    
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := aosp_hllte
