@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device specific files
 $(call inherit-product, device/samsung/hllte/device.mk)
@@ -23,7 +23,7 @@ $(call inherit-product-if-exists, vendor/samsung/hllte/hllte-vendor.mk)
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_hllte
+PRODUCT_NAME := aosp_hllte
 PRODUCT_DEVICE := hllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N7505
