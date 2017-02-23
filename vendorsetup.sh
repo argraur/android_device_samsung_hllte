@@ -1,2 +1,1 @@
-add_lunch_combo lineage_hllte-eng
-add_lunch_combo lineage_hllte-userdebug
+add_lunch_combo aosp_hllte-eng
