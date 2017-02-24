@@ -3,7 +3,7 @@ LOCAL_PATH := device/samsung/hllte
 
 # Kernel (AOSP only)
 PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_PATH)/kernel:kernel
     
 # Ramdisk
 PRODUCT_COPY_FILES += \
